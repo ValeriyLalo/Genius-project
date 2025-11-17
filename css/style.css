@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+[class*=__container] {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-block: 20px;
+  background-color: #221e2d;
+  color: #ffffff;
+}
+.top-header {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 10px;
+  height: 40px;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
+}
+.top-header__logo {
+  border-radius: 24%;
+  height: 100%;
+  width: 100%;
+}
+.top-header__title {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav__link {
+  font-size: 20px;
+  color: #7a7881;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.nav__link:hover {
+  text-decoration: underline;
+  color: #c16548;
+}
+
+.page {
+  padding-block: 15px;
+}
+.title {
+  color: #111111;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+.footer {
+  background: #221e2d;
+  padding: 20px;
+}
+.footer__title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+}
